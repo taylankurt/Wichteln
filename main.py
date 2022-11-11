@@ -3,11 +3,11 @@ import os
 
 
 def wichteln_input():
-    draw_count = 0
+    os.system("cls")
     has_drawn = []
     draw_list = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
     to_be_drawn = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
-    while draw_count < 6:
+    while to_be_drawn != []:
         name = input("Please write your name: ").capitalize().strip()
         if name in has_drawn:
             print("{} you got already a name!, please write another name".format(name))
@@ -31,15 +31,14 @@ def wichteln_input():
                 to_be_drawn.remove(random_selected)
                 next_user = input("Please enter any key: ")
                 os.system("cls")
-                draw_count = draw_count + 1
     return "Mischief managed!"
 
 
 def wichteln_auto():
-    draw_count = 0
+    os.system("cls")
     names = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
     to_be_drawn = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
-    while draw_count < 6:
+    while names != []:
         enter_first = input(
             "Hi {}, press ENTER to get your match: ".format(names[0]))
         current_user = names[0]
@@ -54,15 +53,14 @@ def wichteln_auto():
             to_be_drawn.append(current_user)
         else:
             random_x = random.choice(to_be_drawn)
-        print("{} you have drawn: {}. Please note the name.".format(
+        print("{} you have drawn: {} \nPlease note the name.".format(
             current_user, random_x))
         random_selected = random_x
         to_be_drawn.remove(random_selected)
         next_user = input(
             "When ready press ENTER to wipe the screen: ")
         os.system("cls")
-        draw_count = draw_count + 1
     return "Mischief managed!"
 
 
-print(wichteln_auto())
+print(wichteln_input())
