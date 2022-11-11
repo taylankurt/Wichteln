@@ -40,7 +40,7 @@ def wichteln_auto():
     to_be_drawn = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
     while names != []:
         enter_first = input(
-            "Hi {}, press ENTER to get your match: ".format(names[0]))
+            "Hi {}, press ENTER to get your name: ".format(names[0]))
         current_user = names[0]
         names.remove(current_user)
         if [current_user] == to_be_drawn:
@@ -63,4 +63,4 @@ def wichteln_auto():
     return "Mischief managed!"
 
 
-print(wichteln_input())
+print(wichteln_auto())
