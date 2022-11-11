@@ -22,7 +22,7 @@ def wichteln_auto():
             to_be_drawn.append(current_user)
         else:
             random_x = random.choice(to_be_drawn)
-        print("{} sana {} çıktı. Lütfen ismi not et.".format(
+        print("{} sana çıkan isim: {} \nLütfen ismi bir yere not al.".format(
             current_user, random_x))
         random_selected = random_x
         to_be_drawn.remove(random_selected)
