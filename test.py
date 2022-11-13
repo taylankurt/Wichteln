@@ -4,8 +4,9 @@ import os
 
 def wichteln_auto():
     os.system("cls")
-    names = ["Taylan", "Tacım", "Ezgi", "Serhat", "Gülistan", "Muhi"]
-    to_be_drawn = ["Taylan", "Tacım", "Ezgi", "Serhat", "Gülistan", "Muhi"]
+    names = ["Taylan", "Tacım", "Ezgi", "Serhat", "Gülistan", "Roşin", "Muhi"]
+    to_be_drawn = ["Taylan", "Tacım", "Ezgi",
+                   "Serhat", "Gülistan", "Roşin", "Muhi"]
     while names != []:
         enter_first = input(
             "Merhaba {}, isim çekmek için ENTER tuşuna bas: ".format(names[0]))
@@ -28,7 +29,7 @@ def wichteln_auto():
         next_user = input(
             "Ekranı silmek için hazır olduğunda ENTER tuşuna bas: ")
         os.system("cls")
-    return "Muziplik tamamlandı!"
+    return "Muziplik tamamlandı :)"
 
 
 print(wichteln_auto())

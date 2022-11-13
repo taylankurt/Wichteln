@@ -5,8 +5,10 @@ import os
 def wichteln_input():
     os.system("cls")
     has_drawn = []
-    draw_list = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
-    to_be_drawn = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
+    draw_list = ["Taylan", "Tacim", "Ezgi",
+                 "Serhat", "Gülistan", "Roşin", "Muhi"]
+    to_be_drawn = ["Taylan", "Tacim", "Ezgi",
+                   "Serhat", "Gülistan", "Roşin", "Muhi"]
     while to_be_drawn != []:
         name = input("Please write your name: ").capitalize().strip()
         if name in has_drawn:
@@ -36,8 +38,9 @@ def wichteln_input():
 
 def wichteln_auto():
     os.system("cls")
-    names = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
-    to_be_drawn = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Muhi"]
+    names = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Roşin", "Muhi"]
+    to_be_drawn = ["Taylan", "Tacim", "Ezgi",
+                   "Serhat", "Gülistan", "Roşin", "Muhi"]
     while names != []:
         enter_first = input(
             "Hi {}, press ENTER to get your name: ".format(names[0]))
