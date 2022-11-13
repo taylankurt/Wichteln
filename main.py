@@ -67,3 +67,4 @@ def wichteln_auto():
 
 
 print(wichteln_auto())
+print("test")
