@@ -1,3 +1,4 @@
+# pylint: disable=use-implicit-booleaness-not-comparison
 import random
 import os
 
@@ -22,7 +23,7 @@ def wichteln_input():
                     print("You have drawn yourself, please start over again!")
                     input("Please press ENTER to end: ")
                     return "Mischief not managed :("
-                elif name in to_be_drawn:
+                if name in to_be_drawn:
                     to_be_drawn.remove(name)
                     random_x = random.choice(to_be_drawn)
                     to_be_drawn.append(name)
@@ -50,7 +51,7 @@ def wichteln_auto():
             print("You have drawn yourself, please start over again!")
             input("Please press ENTER to end: ")
             return "Mischief not managed :("
-        elif current_user in to_be_drawn:
+        if current_user in to_be_drawn:
             to_be_drawn.remove(current_user)
             random_x = random.choice(to_be_drawn)
             to_be_drawn.append(current_user)
