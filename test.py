@@ -16,7 +16,7 @@ def wichteln_auto():
             print("Kendini çektin, lütfen baştan başla!")
             input("Bitirmek için ENTER tuşuna bas: ")
             return "Muziplik tamamlanmadı :("
-        elif current_user in to_be_drawn:
+        if current_user in to_be_drawn:
             to_be_drawn.remove(current_user)
             random_x = random.choice(to_be_drawn)
             to_be_drawn.append(current_user)
