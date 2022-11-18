@@ -20,7 +20,7 @@ def wichteln_input():
                 has_drawn.append(name)
                 if [name] == to_be_drawn:
                     print("You have drawn yourself, please start over again!")
-                    start_over = input("Please press ENTER to end: ")
+                    input("Please press ENTER to end: ")
                     return "Mischief not managed :("
                 elif name in to_be_drawn:
                     to_be_drawn.remove(name)
@@ -31,7 +31,7 @@ def wichteln_input():
                 print("{} you have {}".format(name, random_x))
                 random_selected = random_x
                 to_be_drawn.remove(random_selected)
-                next_user = input("Please enter any key: ")
+                input("Please enter any key: ")
                 os.system("cls")
     return "Mischief managed!"
 
@@ -42,13 +42,13 @@ def wichteln_auto():
     to_be_drawn = ["Taylan", "Tacim", "Ezgi",
                    "Serhat", "Gülistan", "Roşin", "Muhi"]
     while names != []:
-        enter_first = input(
+        input(
             "Hi {}, press ENTER to get your name: ".format(names[0]))
         current_user = names[0]
         names.remove(current_user)
         if [current_user] == to_be_drawn:
             print("You have drawn yourself, please start over again!")
-            start_over = input("Please press ENTER to end: ")
+            input("Please press ENTER to end: ")
             return "Mischief not managed :("
         elif current_user in to_be_drawn:
             to_be_drawn.remove(current_user)
@@ -60,7 +60,7 @@ def wichteln_auto():
             current_user, random_x))
         random_selected = random_x
         to_be_drawn.remove(random_selected)
-        next_user = input(
+        input(
             "When ready press ENTER to wipe the screen: ")
         os.system("cls")
     return "Mischief managed!"
