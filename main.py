@@ -1,10 +1,9 @@
-# pylint: disable=use-implicit-booleaness-not-comparison
 import random
 import os
 
 
 def wichteln_input():
-    os.system("cls")
+    os.system("clear")
     has_drawn = []
     draw_list = ["Taylan", "Tacim", "Ezgi",
                  "Serhat", "Gülistan", "Roşin", "Muhi"]
@@ -33,12 +32,12 @@ def wichteln_input():
                 random_selected = random_x
                 to_be_drawn.remove(random_selected)
                 input("Please enter any key: ")
-                os.system("cls")
+                os.system("clear")
     return "Mischief managed!"
 
 
 def wichteln_auto():
-    os.system("cls")
+    os.system("clear")
     names = ["Taylan", "Tacim", "Ezgi", "Serhat", "Gülistan", "Roşin", "Muhi"]
     to_be_drawn = ["Taylan", "Tacim", "Ezgi",
                    "Serhat", "Gülistan", "Roşin", "Muhi"]
@@ -63,9 +62,8 @@ def wichteln_auto():
         to_be_drawn.remove(random_selected)
         input(
             "When ready press ENTER to wipe the screen: ")
-        os.system("cls")
+        os.system("clear")
     return "Mischief managed!"
 
 
 print(wichteln_auto())
-print("test from macos")
